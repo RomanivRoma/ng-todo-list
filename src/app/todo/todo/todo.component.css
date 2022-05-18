@@ -1,0 +1,13 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 60px;
+}
+.todos__container{
+    border: 1px solid var(--border-color);
+    background: var(--primary-color);
+    border-radius: 4px;
+}

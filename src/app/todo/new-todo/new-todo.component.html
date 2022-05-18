@@ -1,0 +1,12 @@
+<label class="input__wrapper">
+    <p>New Todo: </p>
+    <div class="button__wrapper">
+        <input type="text"
+               class="add__input input__item"
+               [(ngModel)]="value"/>
+        <button mat-raised-button color="accent"
+                id="add"
+                (click)="handleAdd()"
+                >Add</button>
+    </div>
+</label>

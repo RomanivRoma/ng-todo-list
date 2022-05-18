@@ -1,0 +1,7 @@
+
+<app-todo-item *ngFor="let todoItem of todoList; trackBy:identify"
+                 [todo]="todoItem"
+                 (checked)="handleChecked($event)"
+                 (edit)="handleEdit($event)"
+                 (delete)="handleDelete($event)">
+</app-todo-item>

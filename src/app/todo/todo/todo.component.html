@@ -1,0 +1,7 @@
+<app-new-todo></app-new-todo>
+
+<div class="todos__container">
+    <app-edit-todo [hidden]="!(editIsVisible$ | async)"></app-edit-todo>
+    <app-todo-list></app-todo-list>
+</div>
+

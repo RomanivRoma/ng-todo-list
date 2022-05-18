@@ -1,0 +1,9 @@
+<label class="input__wrapper">
+    <p>Edit: </p>
+    <input [(ngModel)]="value"
+             class="save__input input__item"/>
+</label>
+<div class="button__container">
+    <button mat-stroked-button color="accent" id="cancel" (click)="handleCancel()">Cancel</button>
+    <button mat-stroked-button color="accent" id="save" (click)="handleSave()">Save</button>    
+</div>

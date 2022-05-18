@@ -1,0 +1,29 @@
+:host{
+    padding: 20px;
+    background: var(--primary-color);
+    border-radius: 4px;
+    box-shadow: 5px 5px 23px 5px rgba(0,0,0,0.17);  
+}
+.input__wrapper{
+    color: var(--input-color);
+    height: 100%;
+    font-size: 19px;
+    width: 90%;
+    font-weight: 600;
+}
+.input__wrapper p{
+    margin-bottom: 8px;
+}
+#add{
+    width: 8%;
+    border-color: var(--additional-color);
+    border-width: 2px;
+}
+
+.button__wrapper{
+    display: flex;
+    gap: 12px;
+}
+p{
+    margin: 0;
+}

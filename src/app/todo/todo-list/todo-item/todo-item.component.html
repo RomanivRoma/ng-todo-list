@@ -1,0 +1,10 @@
+<label class="item_info">
+    <input  type="checkbox"
+            [checked]="todo.done"
+            (change)="handleChecked(todo)"/> 
+    <p>{{ todo.value }}</p>
+</label>
+<div class="button__container">
+    <mat-icon (click)="handleEdit(todo)">edit</mat-icon>
+    <mat-icon (click)="handleDelete(todo.id)">delete_forever</mat-icon>
+</div>

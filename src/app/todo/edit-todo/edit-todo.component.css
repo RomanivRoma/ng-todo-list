@@ -1,0 +1,36 @@
+:host{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+.input__wrapper{
+    color: var(--text-color);
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    height: 100%;
+    font-size: 19px;
+    width: 81%;
+}
+.input__wrapper p{
+    font-weight: 500;
+}
+.button__container{
+    display: flex;
+    width: 18%;
+    gap: 11px;
+}
+#cancel{
+    border-width: 2px;
+    border-color: red;
+}
+#save{
+    border-color: var(--additional-color);
+    border-width: 2px;
+}
+
+p{
+    margin: 0;
+}

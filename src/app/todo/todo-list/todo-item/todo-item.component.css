@@ -1,0 +1,38 @@
+:host{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+:host:not(:last-child){
+    border-bottom: 1px solid var(--border-color);
+}
+p{
+    margin: 0;
+}
+.item_info{
+    display: flex;
+    gap: 20px;
+    font-size: 22px;
+    align-items: center;
+    width: 93%;
+    color: #b6bcc3;
+}
+.button__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 7%;
+    color: var(--additional-color);
+}
+.button__container mat-icon{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+.button__container mat-icon:hover{
+    opacity: .7;
+}
+input[type="checkbox"]:checked ~ p{
+    text-decoration: line-through;
+}
