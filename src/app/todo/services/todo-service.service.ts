@@ -33,14 +33,14 @@ export class TodoService {
   }
 
   // delete todos
-  deleteTodo(id: string){
+  deleteTodo(id: string): void {
     this.todoRef.doc(id).delete()
   }
 
-  setSelectedTodo(todo: Todo | null){
+  setSelectedTodo(todo: Todo | null): void {
     this.selectedTodo.next(todo)
   }
-  getSelectedTodo(){
+  getSelectedTodo(): Subject {
     return this.selectedTodo
   }
 

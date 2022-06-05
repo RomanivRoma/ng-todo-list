@@ -18,7 +18,7 @@ export class TodoListComponent implements OnInit {
   ngOnInit(): void {
     this.retrieveTodos()
   }
-  ngOnDestroy(){
+  ngOnDestroy(): void {
     this.destroy$.next(true)
     this.destroy$.complete()
   }
@@ -37,17 +37,17 @@ export class TodoListComponent implements OnInit {
     });
   }
 
-  handleEdit(todo: Todo){
+  handleEdit(todo: Todo): void {
     this.todoService.isEditVisible.next(true)
     this.todoService.setSelectedTodo(todo)
   }
-  handleDelete(id: string){
+  handleDelete(id: string): void {
     this.todoService.deleteTodo(id)
   }
-  handleChecked(todo: Todo){
+  handleChecked(todo: Todo): void {
     this.todoService.updateTodo(todo)
   }
-  identify(index: number, item: Todo){
+  identify(index: number, item: Todo): string {
     return item.id; 
   }
 }

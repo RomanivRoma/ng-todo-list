@@ -26,16 +26,16 @@ export class EditTodoComponent implements OnInit {
     })
 
   }
-  ngOnDestroy(){
+  ngOnDestroy(): void {
     this.destroy$.next(true)
     this.destroy$.complete()
   }
 
-  handleCancel(){
+  handleCancel(): void {
     this.todoService.setSelectedTodo(null)
     this.todoService.isEditVisible.next(false)
   }
-  handleSave(){
+  handleSave(): void {
     if(!this.selectedTodo) return
     const todo = {
       id: this.selectedTodo.id,

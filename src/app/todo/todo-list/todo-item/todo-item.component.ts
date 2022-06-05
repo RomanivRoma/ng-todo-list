@@ -19,13 +19,13 @@ export class TodoItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  handleDelete(id: string){
+  handleDelete(id: string): void {
     this.delete.emit(id)
   }
-  handleEdit(todo: Todo){
+  handleEdit(todo: Todo): void {
     this.edit.emit(todo)
   }
-  handleChecked(todo: Todo){
+  handleChecked(todo: Todo): void {
     this.checked.emit({...todo, done: !todo.done})
   }
 }
