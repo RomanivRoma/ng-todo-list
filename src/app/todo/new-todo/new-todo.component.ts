@@ -16,11 +16,11 @@ export class NewTodoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  resetInput(){
+  resetInput(): void {
     this.value = ''
   }
 
-  handleAdd(){
+  handleAdd(): void {
     const todo: Todo = {
       id: '',
       value: this.value || '',
